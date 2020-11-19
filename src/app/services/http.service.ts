@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Results } from "../models/results.model"
-import { environment } from "src/environments/environment";
+
 
 @Injectable({
   providedIn: 'root'
@@ -9,7 +9,7 @@ import { environment } from "src/environments/environment";
 
 
 export class HttpService {
-  private baseUrl : string = environment.BASE_API_URL;
+  private baseUrl : string ="http://35.199.71.59/exec-python";
 
   constructor(private readonly _http:HttpClient) { }
 
